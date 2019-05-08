@@ -9,7 +9,6 @@
 <body>
 
 	<div class="wrapper indexPage">
-
 		<article class="mainSection">
 
 			<section class="logoContainer">
