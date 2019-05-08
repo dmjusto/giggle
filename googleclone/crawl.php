@@ -2,6 +2,9 @@
 
 include("classes/DomDocumentParser.php");
 
+$alreadyCrawled = array();
+$crawling = array();
+
 function createLink($src,$url){
 
   $scheme = parse_url($url)["scheme"];
@@ -26,8 +29,42 @@ function createLink($src,$url){
 
   return $src;
 }
+function getDetails($url){
+    $parser = new DomDocumentParser($url);
+    $titleArray = $parser->getTitle();
 
+    if(sizeof($titleArray) == 0 || $titleArray->item(0) == null){
+        return;
+    }
+    $title = $titleArray->item(0)->nodeValue;
+    $title = str_replace("\n", "", $title);
+
+    if($title == "")
+        return;
+
+    $description ="";
+    $keyWords = "";
+
+    $metaArray = $parser->getMetaTags();
+
+    foreach ($metaArray as $meta){
+        if ($meta->getAttribute('name') == "description"){
+            $description= $meta->getAttribute('content');
+        }
+        if($meta->getAttribute('name') == "content"){
+            $keyWords= $meta->getAttribute('content');
+        }
+    }
+
+    $description=str_replace("\n","", $description);
+    $keyWords = str_replace("\n", "", $keyWords);
+
+    echo "URL: $url, Description: $description <br>";
+
+}
 function followLinks($url){
+    global $alreadyCrawled;
+    global $crawling;
   $parser = new DomDocumentParser($url);
 
   $linksList = $parser->getLinks();
@@ -42,11 +79,28 @@ function followLinks($url){
     }
 
     $href = createLink($href,$url);
+
+    if (!in_array($href, $alreadyCrawled)){
+        $alreadyCrawled[] = $href;
+        $crawling[] = $href;
+
+        getDetails($href);
+    }
+    else{
+        return;
+    }
+
     echo $href . "<br>";
+  }
+
+  array_shift($crawling);
+
+  foreach ($crawling as $site){
+      followLinks($site);
   }
 }
 
-$startUrl = "http://www.reecekenney.com";
+$startUrl = "http://www.bbc.com";
 followLinks($startUrl);
 
- ?>
+
