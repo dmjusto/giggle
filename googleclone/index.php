@@ -2,7 +2,6 @@
 <html>
 <head>
 	<title>Giggle Search</title>
-//this is a test of the github connection from phpstorm
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
