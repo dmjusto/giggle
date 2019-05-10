@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f9236ac-1794-4611-ac3c-ea920cbcf357" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/googleclone/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/googleclone/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/googleclone/crawl.php" beforeDir="false" afterPath="$PROJECT_DIR$/googleclone/crawl.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,16 +42,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/googleclone/crawl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+            <state relative-caret-position="294">
+              <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/googleclone/config.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="63">
@@ -88,8 +89,8 @@
         <option value="$PROJECT_DIR$/googleclone/classes/DomDocumentParser.php" />
         <option value="$PROJECT_DIR$/googleclone/search.php" />
         <option value="$PROJECT_DIR$/googleclone/index.php" />
-        <option value="$PROJECT_DIR$/googleclone/crawl.php" />
         <option value="$PROJECT_DIR$/googleclone/config.php" />
+        <option value="$PROJECT_DIR$/googleclone/crawl.php" />
       </list>
     </option>
   </component>
@@ -103,6 +104,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -125,7 +127,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -135,7 +136,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.PHP" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -162,7 +163,8 @@
       <workItem from="1557331389719" duration="382000" />
       <workItem from="1557338553646" duration="746000" />
       <workItem from="1557340100707" duration="15989000" />
-      <workItem from="1557411416228" duration="2178000" />
+      <workItem from="1557411416228" duration="2542000" />
+      <workItem from="1557440926189" duration="1180000" />
     </task>
     <task id="LOCAL-00001" summary="removed unwanted links from web crawler">
       <created>1557347969902</created>
@@ -213,11 +215,18 @@
       <option name="project" value="LOCAL" />
       <updated>1557414078246</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="testing connection to github repo">
+      <created>1557414185685</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1557414185685</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19295000" />
+    <option name="totallyTimeSpent" value="20839000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -229,10 +238,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -301,7 +310,8 @@
     <MESSAGE value="added converting relative links to absolute links" />
     <MESSAGE value="added getting description and keywords for the links" />
     <MESSAGE value="running crawl adds links to database; moved project back to Xampp from Mamp because i couldn't get it to work otherwise" />
-    <option name="LAST_COMMIT_MESSAGE" value="running crawl adds links to database; moved project back to Xampp from Mamp because i couldn't get it to work otherwise" />
+    <MESSAGE value="testing connection to github repo" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing connection to github repo" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f491724e-fbff-4c76-8d9e-6c0c2ec6b3f1/console.sql">
@@ -331,17 +341,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/googleclone/crawl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/googleclone/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/googleclone/crawl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
         </state>
       </provider>
     </entry>
