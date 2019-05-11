@@ -4,7 +4,7 @@ include("classes/DomDocumentParser.php");
 
 $alreadyCrawled = array();
 $crawling = array();
-
+$alreadyFoundImages = array();
 
 function linkExists($url)
 {
@@ -33,6 +33,21 @@ function insertLink($url, $title, $description, $keywords)
     return $query->execute();
 }
 
+function insertImage($url, $src, $alt, $title)
+{
+    global $con;
+
+    $query = $con->prepare("INSERT INTO images(siteUrl, imageUrl, alt, title)
+							VALUES(:siteUrl, :imageUrl, :alt, :title)");
+
+    $query->bindParam(":siteUrl", $url);
+    $query->bindParam(":imageUrl", $src);
+    $query->bindParam(":alt", $alt);
+    $query->bindParam(":title", $title);
+
+    $query->execute();
+}
+
 function createLink($src, $url)
 {
 
@@ -57,6 +72,8 @@ function createLink($src, $url)
 
 function getDetails($url)
 {
+    global $alreadyFoundImages;
+
     $parser = new DomDocumentParser($url);
     $titleArray = $parser->getTitle();
 
@@ -87,14 +104,28 @@ function getDetails($url)
     $keyWords = str_replace("\n", "", $keyWords);
 
 
-    if(linkExists($url)){
+    if (linkExists($url)) {
         echo "$url already in database<br>";
-    }
-    elseif (insertLink($url, $title, $description, $keyWords)){
+    } elseif (insertLink($url, $title, $description, $keyWords)) {
         echo "Success";
     }
 
+    $imageArray = $parser->getImages();
+    foreach ($imageArray as $image) {
+        $src = $image->getAttribute('src');
+        $alt = $image->getAttribute('alt');
+        $title = $image->getAttribute('title');
 
+        if (!$title && !$alt) {
+            continue;
+        }
+
+        $src = createLink($src,$url);
+        if (!in_array($src, $alreadyFoundImages)){
+            $alreadyFoundImages[] = $src;
+            insertImage($url,$src,$alt,$title);
+        }
+    }
 }
 
 function followLinks($url)
@@ -121,9 +152,8 @@ function followLinks($url)
             $crawling[] = $href;
 
             getDetails($href);
-        } else {
-            return;
         }
+
 
 
     }
@@ -135,7 +165,7 @@ function followLinks($url)
     }
 }
 
-$startUrl = "http://www.bbc.com";
+$startUrl = "https://en.wikipedia.org/wiki/Main_Page";
 followLinks($startUrl);
 
 ?>
