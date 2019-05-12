@@ -17,7 +17,7 @@
 			<section class="searchContainer">
 				<form class="" action="search.php" method="GET">
 
-					<input type="text" name="term" class="searchBox">
+					<input type="text" name="term" autocomplete="off" placeholder="Search Doodle or type a URL" class="searchBox">
 					<input type="submit" value="search" class="searchButton">
 
 				</form>

@@ -16,11 +16,13 @@ html, body{
 }
 .wrapper.indexPage{
 	justify-content: center;
+	background-color: #323638;
 }
 .mainSection{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+
 }
 .mainSection .searchContainer{
 	margin-top: 20px;
@@ -51,10 +53,11 @@ html, body{
 	box-sizing: border-box;
 	border-radius: 30px;
 	outline: none;
-	padding: 10px;
+	padding: 10px 22px;
 	font-size: 18px;
-	color: #000000;
-	width: 45%;
+	color: #ffffff;
+	background-color: #1F2023;
+	width: 35%;
 }
 .indexPage .mainSection .logoContainer img{
 	width: 300px;
