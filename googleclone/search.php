@@ -32,6 +32,13 @@ $page = isset($_GET["page"]) ? $_GET["page"] : 1;
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
           integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous">
+
+    </script>
+
 </head>
 <body>
 
@@ -136,6 +143,6 @@ $page = isset($_GET["page"]) ? $_GET["page"] : 1;
 
 
     </div>
-
+    <script type="text/javascript" src="assets/javascript/script.js"></script>
 </body>
 </html>

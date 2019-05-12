@@ -165,7 +165,8 @@ function followLinks($url)
     }
 }
 
-$startUrl = "https://en.wikipedia.org/wiki/Main_Page";
+//site to crawl...
+$startUrl = "https://www.yelp.com";
 followLinks($startUrl);
 
 ?>

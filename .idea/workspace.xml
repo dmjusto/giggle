@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f9236ac-1794-4611-ac3c-ea920cbcf357" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/googleclone/classes/SitesResultsProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/googleclone/ajax/updateLinkCount.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/googleclone/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/googleclone/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/googleclone/classes/DomDocumentParser.php" beforeDir="false" afterPath="$PROJECT_DIR$/googleclone/classes/DomDocumentParser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/googleclone/classes/SitesResultsProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/googleclone/classes/SitesResultsProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/googleclone/crawl.php" beforeDir="false" afterPath="$PROJECT_DIR$/googleclone/crawl.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/googleclone/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/googleclone/search.php" afterDir="false" />
     </list>
@@ -42,8 +41,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/googleclone/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+            <state relative-caret-position="375">
+              <caret line="19" column="62" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -51,26 +50,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/googleclone/crawl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="924">
-              <caret line="156" selection-start-line="156" selection-end-line="156" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/googleclone/config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/googleclone/assets/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="140" selection-start-line="140" selection-start-column="2" selection-end-line="144" selection-end-column="3" />
+            <state relative-caret-position="585">
+              <caret line="168" column="33" selection-start-line="168" selection-start-column="33" selection-end-line="168" selection-end-column="33" />
+              <folding>
+                <element signature="n#followLinks#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -78,25 +62,99 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/googleclone/search.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="71" column="54" selection-start-line="71" selection-start-column="54" selection-end-line="71" selection-end-column="54" />
+            <state relative-caret-position="585">
+              <caret line="145" column="33" selection-start-line="145" selection-start-column="33" selection-end-line="145" selection-end-column="33" />
               <folding>
-                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+                <element signature="e#0#5#0#PHP" />
+                <element signature="e#30#135#0#PHP" />
+                <element signature="e#87#135#0#PHP" />
+                <element signature="e#183#212#0#PHP" />
+                <element signature="n#link#1;n#head#0;n#html#0;n#!!top" />
+                <element signature="n#article#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#0;n#article#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#0;n#section#0;n#article#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#a#0;n#section#0;n#section#0;n#article#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#1;n#section#0;n#article#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#form#0;n#section#1;n#section#0;n#article#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#0;n#form#0;n#section#1;n#section#0;n#article#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#1270#1275#0#PHP" />
+                <element signature="n#button#0;n#section#0;n#form#0;n#section#1;n#section#0;n#article#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#1;n#article#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#ul#0;n#section#1;n#article#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#1670#1675#0#PHP" />
+                <element signature="n#li#0;n#ul#0;n#section#1;n#article#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#1605#1610#0#PHP" />
+                <element signature="e#1707#1712#0#PHP" />
+                <element signature="n#li#1;n#ul#0;n#section#1;n#article#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#1782#1787#0#PHP" />
+                <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#2132#2137#0#PHP" />
+                <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#2777#2782#0#PHP" />
+                <element signature="e#3023#3106#0#PHP" />
+                <element signature="e#3087#3161#0#PHP" />
+                <element signature="e#2855#3003#0#PHP" />
+                <element signature="e#2908#2991#0#PHP" />
+                <element signature="n#div#0;n#!!top" />
+                <element signature="e#3215#3487#0#PHP" />
+                <element signature="n#div#0;n#!!top" />
+                <element signature="n#a#0;n#div#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/googleclone/classes/SitesResultsProvider.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="16" column="77" lean-forward="true" selection-start-line="16" selection-start-column="77" selection-end-line="16" selection-end-column="77" />
+            <state relative-caret-position="291">
+              <caret line="59" column="70" selection-start-line="59" selection-start-column="70" selection-end-line="59" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/googleclone/assets/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="116">
+              <caret line="138" column="12" selection-start-line="138" selection-start-column="12" selection-end-line="138" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/googleclone/assets/javascript/script.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="483">
+              <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/googleclone/ajax/updateLinkCount.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>heaader</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -107,10 +165,13 @@
         <option value="$PROJECT_DIR$/googleclone/index.php" />
         <option value="$PROJECT_DIR$/googleclone/config.php" />
         <option value="$PROJECT_DIR$/googleclone/classes/DomDocumentParser.php" />
-        <option value="$PROJECT_DIR$/googleclone/crawl.php" />
         <option value="$PROJECT_DIR$/googleclone/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/googleclone/assets/script.js" />
         <option value="$PROJECT_DIR$/googleclone/search.php" />
         <option value="$PROJECT_DIR$/googleclone/classes/SitesResultsProvider.php" />
+        <option value="$PROJECT_DIR$/googleclone/crawl.php" />
+        <option value="$PROJECT_DIR$/googleclone/ajax/updateLinkCount.php" />
+        <option value="$PROJECT_DIR$/googleclone/assets/javascript/script.js" />
       </list>
     </option>
   </component>
@@ -141,6 +202,12 @@
               <item name="giggle" type="b2602c69:ProjectViewProjectNode" />
               <item name="giggle" type="462c0819:PsiDirectoryNode" />
               <item name="googleclone" type="462c0819:PsiDirectoryNode" />
+              <item name="ajax" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="giggle" type="b2602c69:ProjectViewProjectNode" />
+              <item name="giggle" type="462c0819:PsiDirectoryNode" />
+              <item name="googleclone" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -148,7 +215,7 @@
               <item name="giggle" type="462c0819:PsiDirectoryNode" />
               <item name="googleclone" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="javascript" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="giggle" type="b2602c69:ProjectViewProjectNode" />
@@ -271,7 +338,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30177000" />
+    <option name="totallyTimeSpent" value="33699000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -286,8 +353,8 @@
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.61031175" visible="true" weight="0.24248926" />
-      <window_info active="true" id="Structure" order="1" sideWeight="0.38968825" side_tool="true" visible="true" weight="0.24248926" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.61031175" visible="true" weight="0.24248926" />
+      <window_info id="Structure" order="1" sideWeight="0.38968825" side_tool="true" visible="true" weight="0.24248926" />
       <window_info id="Favorites" order="2" sideWeight="0.38489208" side_tool="true" weight="0.26037195" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -373,9 +440,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/googleclone/SitesResultsProvider.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/googleclone/SitesResultsProvider.php" />
     <entry file="file://$PROJECT_DIR$/googleclone/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -383,41 +448,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/googleclone/crawl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="156" selection-start-line="156" selection-end-line="156" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/googleclone/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        <state relative-caret-position="375">
+          <caret line="19" column="62" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/googleclone/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="140" selection-start-line="140" selection-start-column="2" selection-end-line="144" selection-end-column="3" />
+        <state relative-caret-position="116">
+          <caret line="138" column="12" selection-start-line="138" selection-start-column="12" selection-end-line="138" selection-end-column="12" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/googleclone/assets/script.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/googleclone/search.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="71" column="54" selection-start-line="71" selection-start-column="54" selection-end-line="71" selection-end-column="54" />
+        <state relative-caret-position="585">
+          <caret line="145" column="33" selection-start-line="145" selection-start-column="33" selection-end-line="145" selection-end-column="33" />
           <folding>
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="e#0#5#0#PHP" />
+            <element signature="e#30#135#0#PHP" />
+            <element signature="e#87#135#0#PHP" />
+            <element signature="e#183#212#0#PHP" />
+            <element signature="n#link#1;n#head#0;n#html#0;n#!!top" />
+            <element signature="n#article#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#0;n#article#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#0;n#section#0;n#article#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#a#0;n#section#0;n#section#0;n#article#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#1;n#section#0;n#article#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#form#0;n#section#1;n#section#0;n#article#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#0;n#form#0;n#section#1;n#section#0;n#article#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#1270#1275#0#PHP" />
+            <element signature="n#button#0;n#section#0;n#form#0;n#section#1;n#section#0;n#article#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#1;n#article#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#section#1;n#article#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#1670#1675#0#PHP" />
+            <element signature="n#li#0;n#ul#0;n#section#1;n#article#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#1605#1610#0#PHP" />
+            <element signature="e#1707#1712#0#PHP" />
+            <element signature="n#li#1;n#ul#0;n#section#1;n#article#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#1782#1787#0#PHP" />
+            <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#2132#2137#0#PHP" />
+            <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#2777#2782#0#PHP" />
+            <element signature="e#3023#3106#0#PHP" />
+            <element signature="e#3087#3161#0#PHP" />
+            <element signature="e#2855#3003#0#PHP" />
+            <element signature="e#2908#2991#0#PHP" />
+            <element signature="n#div#0;n#!!top" />
+            <element signature="e#3215#3487#0#PHP" />
+            <element signature="n#div#0;n#!!top" />
+            <element signature="n#a#0;n#div#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/googleclone/crawl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="168" column="33" selection-start-line="168" selection-start-column="33" selection-end-line="168" selection-end-column="33" />
+          <folding>
+            <element signature="n#followLinks#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/googleclone/classes/SitesResultsProvider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="77" lean-forward="true" selection-start-line="16" selection-start-column="77" selection-end-line="16" selection-end-column="77" />
+        <state relative-caret-position="291">
+          <caret line="59" column="70" selection-start-line="59" selection-start-column="70" selection-end-line="59" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/googleclone/ajax/updateLinkCount.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/googleclone/assets/javascript/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
         </state>
       </provider>
     </entry>
