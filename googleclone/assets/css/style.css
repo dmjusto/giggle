@@ -2,7 +2,7 @@
 
 *{
 	font-family: 'Roboto', sans-serif;
-	color: #545454;
+	/*color: #545454;*/
 }
 
 html, body{
@@ -206,6 +206,7 @@ a .pageNumber{
 	position: relative;
 	max-width: 200px;
 	min-width: 50px;
+    visibility: hidden;
 }
 .gridItem .details{
 	visibility: hidden;
@@ -222,6 +223,7 @@ a .pageNumber{
 	-webkit-box-sizing: border-box;
 	white-space: nowrap;
 	-moz-box-sizing: border-box;
+    z-index: 10;
 }
 .gridItem:hover .details{
 	visibility: visible;
