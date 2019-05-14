@@ -166,7 +166,7 @@ function followLinks($url)
 }
 
 //site to crawl...
-$startUrl = "https://www.airbnb.com/a/?af=43720035&c=.pi0.pk25650614176_233093750306_c_27384619383&sem_position=1t1&sem_target=kwd-27384619383&location_of_interest=&location_physical=9051778&ghost=true&gclid=CjwKCAjwiN_mBRBBEiwA9N-e_ppTnDX7LuEArZuVKFtkq1AzC4aAv0ZQugyWcuqB5M2XegJRSNviKBoCb0kQAvD_BwE";
+$startUrl = "https://www.pornhub.com";
 followLinks($startUrl);
 
 ?>

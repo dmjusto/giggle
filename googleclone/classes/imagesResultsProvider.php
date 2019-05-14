@@ -65,7 +65,11 @@ class imagesResultsProvider
 
             $resultsHTML .= "<div class = 'gridItem'>
                                 <a href='$imageUrl'>
+                                
                                     <img src='$imageUrl' alt=''>
+                                    
+                                    <span class='details'>$displayText</span>
+                                    
                                 </a>
                               </div>";
 

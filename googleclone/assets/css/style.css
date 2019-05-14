@@ -199,3 +199,30 @@ a .pageNumber{
 	color: black;
 	font-size: 13px;
 }
+.mainResultsSection .imageResults{
+	margin: 20px;
+}
+.gridItem img{
+	position: relative;
+	max-width: 200px;
+	min-width: 50px;
+}
+.gridItem .details{
+	visibility: hidden;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	background-color: rgba(0,0,0,0.8);
+	color: #fff;
+	font-size: 11px;
+	padding: 3px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	white-space: nowrap;
+	-moz-box-sizing: border-box;
+}
+.gridItem:hover .details{
+	visibility: visible;
+}

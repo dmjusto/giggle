@@ -153,6 +153,8 @@ $page = isset($_GET["page"]) ? $_GET["page"] : 1;
 
 
     </div>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <script type="text/javascript" src="assets/javascript/script.js"></script>
 </body>
 </html>
